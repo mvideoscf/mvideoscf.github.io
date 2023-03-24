@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>	
+			
+			<div class="page_content">
+				
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>NEW</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="hardReload" title="Refresh" onClick="location.reload(true)">&#8635;</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr> 
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<div id="loading">loading...</div>
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	<script src="js/genres.js"></script>
+	<script>
+	
+	
+	
+
+function getSecondPart(str) {
+    return str.split('?q=')[1];
+}
+var numResults= 0;
+
+var files = [];
+var numFiles = 0;
+function readTextFile(file)
+{
+	var data;
+	fetch(file)
+		.then(response => response.text())
+		.then(data => updateFile(data));
+	return data;
+}
+function updateFile(data)
+{
+	files.push(data);
+	numFiles++;
+	if(numFiles == genres.length)
+		getNew();
+}
+function readFiles()
+{
+	for (var j = 0 ; j < genres.length; j++)
+			readTextFile(genres[j]+".html");
+}
+function sortArrays(arrays, comparator = (a, b) => (a < b) ? -1 : (a > b) ? 1 : 0) {
+    let arrayKeys = Object.keys(arrays);
+    let sortableArray = Object.values(arrays)[0];
+    let indexes = Object.keys(sortableArray);
+    let sortedIndexes = indexes.sort((a, b) => comparator(sortableArray[a], sortableArray[b]));
+
+    let sortByIndexes = (array, sortedIndexes) => sortedIndexes.map(sortedIndex => array[sortedIndex]);
+
+    if (Array.isArray(arrays)) {
+        return arrayKeys.map(arrayIndex => sortByIndexes(arrays[arrayIndex], sortedIndexes));
+    } else {
+        let sortedArrays = {};
+        arrayKeys.forEach((arrayKey) => {
+            sortedArrays[arrayKey] = sortByIndexes(arrays[arrayKey], sortedIndexes);
+        });
+        return sortedArrays;
+    }
+}
+function getNew()
+{
+	const table = document.getElementById("videos");
+	var c = 0;
+	let row;
+	var list;
+	var newSongs =[];
+	var newSongsIndices=[];
+	for (var j = 0 ; j < genres.length; j++) 
+	{
+		list = files[j].split('\n');
+		for(var i = 0 ; i <list.length;i++)
+		{
+			if(list[i].includes('target="_blank"') && parseInt(list[i].split("i/s")[1].split(".jpg")[0])>=2055){
+				newSongs.push(list[i]);
+				newSongsIndices.push(parseInt(list[i].split("i/s")[1].split(".jpg")[0]));
+			}
+			
+		}
+	}	
+	var sorted = sortArrays([newSongsIndices,newSongs]);	
+	newSongs = sorted[1];
+	for (var i = newSongs.length-1 ; i >=newSongs.length-120 ; i--) 
+	{
+		if(c==0)
+			row= table.insertRow();
+		
+		let data = row.insertCell(c);
+		if(newSongs[i].includes("'explicit'") ||newSongs[i].includes('"explicit"') )
+		{
+			data.classList.add('explicit');
+		}
+		if(newSongs[i].includes("'mature'") ||newSongs[i].includes('"mature"') )
+		{
+			data.classList.add('mature');
+		}
+		data.innerHTML = newSongs[i];
+		data.parentElement.innerHTML+='\n';
+		numResults++;
+		c++;
+		if(c>5)
+			c=0;
+	}
+	document.getElementById("loading").innerHTML = "";
+	document.getElementById("videos").innerHTML = numResults+" videos<br/>"+document.getElementById("videos").innerHTML ;
+	document.getElementById("videos").innerHTML += "</tr></tbody>";
+	Array.prototype.forEach.call(document.getElementsByClassName("mature"), function(el) {
+			el.style.visibility = "hidden";			
+		});
+}
+readFiles();
+//loadTableData();
+</script>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+	
+	</body>
+</html>

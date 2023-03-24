@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>NOISE</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>						
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=TIy3n2b7V9k" target="_blank"><img src="i/s1909.jpg"><br/>Avril Lavigne - Sk8er Boi</a></td>
+						<td><a href="https://www.youtube.com/watch?v=TUxFQ5QBiYk" target="_blank"><img src="i/s1641.jpg"><br/>The Damned - New Rose</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=4ACKEGCvLtI" target="_blank"><img src="i/s1632.jpg"><br/>Fear - I Don't Care About You</a></td>
+						<td><a href="https://www.youtube.com/watch?v=r00ikilDxW4" target="_blank"><img src="i/s2632.jpg"><br/>Green Day - 21 Guns</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=Ee_uujKuJMI" target="_blank"><img src="i/s379.2.jpg"><br/>Green Day - American Idiot </a></td>
+						<td><a href="https://www.youtube.com/watch?v=NUTGr5t3MoY" target="_blank"><img src="i/s1246.jpg"><br/>Green Day - Basket Case  </a></td>
+					</tr>
+					<tr>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=lfppdaW24YQ" target="_blank"><img src="i/s2624.jpg"><br/>Green Day - Brain Stew</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=CnQ8N1KacJc" target="_blank"><img src="i/s2626.jpg"><br/>Green Day - Good Riddance (Time Of Your Life)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=A1OqtIqzScI" target="_blank"><img src="i/s2628.jpg"><br/>Green Day - Holiday</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=djelUbjBlkA" target="_blank"><img src="i/s2629.jpg"><br/>Green Day - Jesus Of Suburbia</a></td>
+						<td><a href="https://www.youtube.com/watch?v=rdpBZ5_b48g" target="_blank"><img src="i/s2629.jpg"><br/>Green Day - Wake Me Up When September Ends</a></td>
+						<td><a href="https://www.youtube.com/watch?v=77xeMlN7ng4" target="_blank"><img src="i/s2622.jpg"><br/>Green Day - When I Come Around</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=1MZxINNzLJg" target="_blank"><img src="i/s2182.jpg"><br/>Ifht - New Bike Day</a></td>
+						<td><a href="https://www.youtube.com/watch?v=nO6YL09T8Fw" target="_blank"><img src="i/s1804.jpg"><br/>Joan Jett & The Blackhearts - Bad Reputation</a></td>
+						<td><a href="https://www.youtube.com/watch?v=pRu5wxl5frk" target="_blank"><img src="i/s1805.jpg"><br/>Joan Jett - Bad Reputation</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=hDfz9jWOODM" target="_blank"><img src="i/s1635.jpg"><br/>The Misfits - Attitude</a></td>
+						<td><a href="https://www.youtube.com/watch?v=xPxsS_-LTe0" target="_blank"><img src="i/s1245.jpg"><br/>Ramones - Blitzkrieg Bop </a></td>
+						<td><a href="https://www.youtube.com/watch?v=bm51ihfi1p4" target="_blank"><img src="i/s2638.jpg"><br/>Ramones - I Wanna Be Sedated</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=bej93aPldHE" target="_blank"><img src="i/s2634.jpg"><br/>Ramones - Psycho Therapy</a></td>
+						<td><a href="https://www.youtube.com/watch?v=oz7KYUkdlvE" target="_blank"><img src="i/s2637.jpg"><br/>Ramones - Rock N' Roll High School</a></td>
+						<td><a href="https://www.youtube.com/watch?v=8Z1-R2LEuao" target="_blank"><img src="i/s2633.jpg"><br/>Ramones - Rockaway Beach</a></td>
+						<td><a href="https://www.youtube.com/watch?v=Z5_fQHTW_Sk" target="_blank"><img src="i/s2635.jpg"><br/>Ramones - She's The One</a></td>
+						<td><a href="https://www.youtube.com/watch?v=y3TQnMtUYwU" target="_blank"><img src="i/s2633.jpg"><br/>Ramones - Sheena Is a Punk Rocker</a></td>
+						<td><a href="https://www.youtube.com/watch?v=R8fLOJswWtk" target="_blank"><img src="i/s1247.jpg"><br/>Sex Pistols - God Save the Queen </a></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</div><br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

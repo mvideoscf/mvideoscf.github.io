@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>BLUEGRASS</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>
+						|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=7NJqUN9TClM" target="_blank"><img src="i/s2732.jpg"><br/>The Band Perry - If I Die Young</a></td>
+						<td><a href="https://www.youtube.com/watch?v=Ir5c1MHTsSA" target="_blank"><img src="i/s686.2.jpg"><br/>Pickin' On - Astronomy Domine</a></td>
+						<td><a href="https://www.youtube.com/watch?v=3xiQLMVMJVQ" target="_blank"><img src="i/s687.2.jpg"><br/>Pickin' On - Breathe In The Air</a></td>
+						<td><a href="https://www.youtube.com/watch?v=-cHLyKqsYBc" target="_blank"><img src="i/s688.2.jpg"><br/>Pickin' On - Comfortably Numb</a></td>
+						<td><a href="https://www.youtube.com/watch?v=Koev7JO5M_w" target="_blank"><img src="i/s689.2.jpg"><br/>Pickin' On - Goodbye Blue Sky</a></td>
+						<td><a href="https://www.youtube.com/watch?v=1WTZcB7PH-k" target="_blank"><img src="i/s690.2.jpg"><br/>Pickin' On - Lucifer Sam</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=7JCZwiucR3Q" target="_blank"><img src="i/s691.2.jpg"><br/>Pickin' On - Money</a></td>
+						<td><a href="https://www.youtube.com/watch?v=eUQUd0DFgBA" target="_blank"><img src="i/s692.2.jpg"><br/>Pickin' On - Run Like Hell</a></td>
+						<td><a href="https://www.youtube.com/watch?v=e3BnxvFPeGg" target="_blank"><img src="i/s693.2.jpg"><br/>Pickin' On - Time</a></td>
+						<td><a href="https://www.youtube.com/watch?v=QhXHINK7-o4" target="_blank"><img src="i/s2614.jpg"><br/>Rob Scallon - Psychosocial (Slipknot)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=e4Ao-iNPPUc" target="_blank"><img src="i/s2022.jpg"><br/>Steve'n'Seagulls - Thunderstruck (AC/DC)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=e4ujS1er1r0" target="_blank"><img src="i/s1039.2.jpg"><br/>Zac Brown Band - Chicken Fried</a></td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

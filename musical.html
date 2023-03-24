@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>
+			<div class="page_content">
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>MUSICAL</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>						
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=xwFYqoDStfY" target="_blank"><img src="i/s1852.jpg"><br/>Andrew Lloyd Webber - Jellicle Cats</a></td>
+						<td><a href="https://www.youtube.com/watch?v=pgz6PnHkmpY" target="_blank"><img src="i/s1840.jpg"><br/>Andrew Lloyd Webber - The Phantom of the Opera</a></td>
+						<td><a href="https://www.youtube.com/watch?v=t4WP3bODmfo" target="_blank"><img src="i/s3255.jpg"><br/>Barry Bostwick and Susan Sarandon - Dammit Janet (The Rocky Horror Picture Show)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=5gZrYyi-XRQ" target="_blank"><img src="i/s3590.jpg"><br/>David Newman - Once upon a December (Disney)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=79DijItQXMM" target="_blank"><img src="i/s3249.jpg"><br/>Dwayne Johnson - You're Welcome (Disney)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=YVVTZgwYwVo" target="_blank"><img src="i/s3250.jpg"><br/>Idina Menzel - Let It Go (Disney)</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=SbCl6m4gDR0" target="_blank"><img src="i/s262.2.jpg"><br/>Jemaine Clement - Shiny (Disney)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=_e2igZexpMs" target="_blank"><img src="i/s3251.jpg"><br/>Leonard Bernstein - America (West Side Story)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=c9z33lasnkU" target="_blank"><img src="i/s3252.jpg"><br/>Leonard Bernstein - Jet Song (West Side Story)</a></td>
+						<td><a href="https://video.disney.com/watch/ducktales-theme-song-4c2f263b0be92840e619df87" target="_blank"><img src="i/s3135.jpg"><br/>Mark Mueller - DuckTales Theme (Disney)</a></td>					
+						<td><a href="https://www.youtube.com/watch?v=ZCZDWZFtyWY" target="_blank"><img src="i/s3254.jpg"><br/>Tim Curry - Sweet Transvestite (The Rocky Horror Picture Show)</a></td>
+					</tr>
+				</table><br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

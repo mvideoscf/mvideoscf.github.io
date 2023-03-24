@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>
+			
+			
+			<div class="page_content">
+				
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>FUNK</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>						
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=kBVJneoQ76c" target="_blank"><img src="i/s1723.jpg"><br/>Bar-Kays - Too Hot To Stop</a></td>
+						<td><a href="https://www.youtube.com/watch?v=UqyT8IEBkvY" target="_blank"><img src="i/s1480.jpg"><br/>Bruno Mars - 24K Magic</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" target="_blank"><img src="i/s1484.jpg"><br/>Bruno Mars - Uptown Funk</a></td>						
+						<td><a href="https://www.youtube.com/watch?v=Er9xGRolrT4" target="_blank"><img src="i/s2676.jpg"><br/>Chic - Good Times</a></td>
+						<td class="explicit"><a href="https://www.youtube.com/watch?v=Kp7eSUU9oy8" target="_blank"><img src="i/s187.2.jpg"><br/>Childish Gambino - Redbone </a></td>
+						<td><a href="https://www.youtube.com/watch?v=Gs069dndIYk" target="_blank"><img src="i/s2677.jpg"><br/>Earth, Wind & Fire - September</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=oweK8H40kZk" target="_blank"><img src="i/s3477.jpg"><br/>Herbie Hancock - Chameleon (Experience Montreux)</a></td>
+						<td><a href="https://www.youtube.com/watch?v=_eQfV4ANkys" target="_blank"><img src="i/s1156.jpg"><br/>Parliament - Give Up The Funk 	</a></td>
+						<td><a href="https://www.youtube.com/watch?v=ZyJzylk8d_M" target="_blank"><img src="i/s1156.jpg"><br/>Parliament - P-Funk (Wants to Get Funked Up) 	</a></td>
+						<td><a href="https://www.youtube.com/watch?v=H9tEvfIsDyo" target="_blank"><img src="i/s1814.jpg"><br/>Prince & The Revolution - Kiss</a></td>
+						<td><a href="https://www.youtube.com/watch?v=QYHxGBH6o4M" target="_blank"><img src="i/s2730.jpg"><br/>Rick James - Super Freak</a></td>
+						<td><a href="https://www.youtube.com/watch?v=wnKc4zi0MLA" target="_blank"><img src="i/s2700.jpg"><br/>Rick James - Super Freak</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=zGSxvH5i6XQ" target="_blank"><img src="i/s2330.jpg"><br/>Stevie Wonder - Higher Ground</a></td>
+						<td><a href="https://www.youtube.com/watch?v=ftdZ363R9kQ" target="_blank"><img src="i/s2217.jpg"><br/>Stevie Wonder - Superstition</a></td>
+					</tr>
+				</table><br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>

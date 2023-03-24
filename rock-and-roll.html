@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Music Videos</title>
+		<link rel="stylesheet" href="mystyle.css"><script src="js/scale.js"></script>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7119635872497272" crossorigin="anonymous"></script>	
+</head>
+	<body>
+		<center>
+			
+			
+			<div class="page_content">
+				
+				<a href="/"><img class="noContrast" src="logo.jpg" alt = "mVideos" ><br/></a>
+				<br/>
+				<div class="greyBar">
+					<br/>
+					<table>
+						<tr>
+							<b>ROCK AND ROLL</b>&emsp;
+						</tr>
+						<tr>
+							<form action="search">
+								 
+								<input name="q" size="40" placeholder="3000+ videos to search from...">
+								<input type="submit" title="Search" value=">">
+							</form>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Explicit
+								<input type="checkbox" id="accept2" name="accept2" checked="checked">
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<label class="container">Mature
+								<input type="checkbox" id="accept" name="accept" >
+								<span class="checkmark"></span>
+							</label>&emsp;
+						</tr>
+						<tr>
+							<button id="btn" title="Filter by Rating">Filter</button>&emsp;
+						</tr>|&emsp;
+						<tr>
+							<button id="sort" title="Sort by Date Added" onClick="sortTable()">&#8593</button>&emsp;
+						</tr>						
+						<tr>
+							<button id="select" title="Playlist Mode" onClick="injectButtons()">&#9836;</button>
+						</tr>
+					<br/>
+					<br/>
+				</div>
+				
+				<br/>
+				<table id="videos">
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=vPRonG87eKw" target="_blank"><img src="i/s101.2.jpg"><br/>The Beach Boys - Barbara Ann</a></td>
+						<td><a href="https://www.youtube.com/watch?v=8JEiJDGHsX0" target="_blank"><img src="i/s104.2.jpg"><br/>The Beach Boys - Surfin' U.S.A.</a></td>
+						<td><a href="https://www.youtube.com/watch?v=IRF6nmqcbxo" target="_blank"><img src="i/s115.2.jpg"><br/>The Beatles - Rock And Roll Music</a></td>
+						<td><a href="https://www.youtube.com/watch?v=Y1wLTJf_WtU" target="_blank"><img src="i/s193.2.jpg"><br/>Chuck Berry - Johnny B. Goode</a></td>
+						<td><a href="https://www.youtube.com/watch?v=npkoS9Q3QYk" target="_blank"><img src="i/s194.2.jpg"><br/>Chuck Berry - Maybellene</a></td>
+						<td><a href="https://www.youtube.com/watch?v=EOrMg3pY7hw" target="_blank"><img src="i/s195.2.jpg"><br/>Chuck Berry - Roll Over Beethoven</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=MfrC8PAQtlg" target="_blank"><img src="i/s2257.jpg"><br/>Elvis Presley -  JAILHOUSE ROCK</a></td>
+						<td><a href="https://www.youtube.com/watch?v=Bm5HKlQ6nGM" target="_blank"><img src="i/s289.2.jpg"><br/>Elvis Presley - Blue Suede Shoes</a></td>
+						<td><a href="https://www.youtube.com/watch?v=vGJTaP6anOU" target="_blank"><img src="i/s2255.jpg"><br/>Elvis Presley - Can't Help Falling In Love</a></td>
+						<td><a href="https://www.youtube.com/watch?v=e9BLw4W5KU8" target="_blank"><img src="i/s2255.jpg"><br/>Elvis Presley - Heartbreak Hotel</a></td>
+						<td><a href="https://www.youtube.com/watch?v=-eHJ12Vhpyc" target="_blank"><img src="i/s2255.jpg"><br/>Elvis Presley - Hound Dog</a></td>
+						<td><a href="https://www.youtube.com/watch?v=NnIIvWnpaBU" target="_blank"><img src="i/s2683.jpg"><br/>Little Richard - Tutti Frutti</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.youtube.com/watch?v=3KFvoDDs0XM" target="_blank"><img src="i/s807.2.jpg"><br/>Roy Orbison - Oh, Pretty Woman</a></td>
+					</tr>
+				</table>
+			</div><br/>
+			<br/>
+			<br/>
+			<br/>
+		<p id='playlist'></p>
+		<br>
+		<button id='playButton' onclick='play()'>Play</button>
+		<br>
+		<br>
+		</center>
+	</body>
+	
+	<script src="js/hide.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/sort.js"></script>
+</html>
