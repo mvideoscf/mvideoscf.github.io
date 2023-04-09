@@ -1,0 +1,8 @@
+if(screen.width >=2500)
+	document.write("<style> body {zoom:150%} </style>")
+if(screen.width <=1700)
+	document.write("<style> body {zoom:90%} </style>")
+if(screen.width <=1500)
+	document.write("<style> body {zoom:80%} </style>")
+if(screen.width <=1400)
+	document.write("<style> body {zoom:70%} </style>")
